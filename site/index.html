@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>项目站点 · 黄锦 Huang Jin</title>
+<meta name="description" content="黄锦开源项目的站点索引：Jsonita、PageSnap、Claude Code 插件等。">
+<meta name="theme-color" content="#F7F6F3">
+<link rel="canonical" href="https://project.huangjin.online/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F6F3;--ink:#17181C;--ink-2:#5C5F66;--ink-3:#8A8D94;--hairline:#E6E4DE;--accent:#C8402F;--accent-deep:#A33323;
+--font-sans:"Geist","Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;--font-mono:"Geist Mono",ui-monospace,"SF Mono",monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+body{min-width:320px;background:var(--bg);color:var(--ink);font-family:var(--font-sans);font-size:16px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+::selection{background:var(--accent);color:#fff}
+.container{width:min(60rem,100%);margin:0 auto;padding:0 clamp(20px,5vw,48px)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.nav-brand{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:17px;text-decoration:none}
+.nav-seal{width:10px;height:10px;border-radius:3px;background:var(--accent)}
+.nav a.back{color:var(--ink-2);font-size:14px;font-weight:500;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.nav a.back:hover{color:var(--accent)}
+.hero{padding-top:clamp(40px,8vh,80px)}
+.hero h1{font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.1;letter-spacing:.01em}
+.hero h1 span{display:block;margin-top:6px;color:var(--ink-2);font-size:clamp(1.1rem,2vw,1.5rem);font-weight:600;letter-spacing:-.01em}
+.hero p{max-width:40rem;margin-top:20px;color:var(--ink-2)}
+.hero code{font:13px var(--font-mono);color:var(--accent)}
+.list{margin-top:clamp(40px,6vw,64px);list-style:none;border-top:1px solid var(--hairline)}
+.row{display:grid;grid-template-columns:minmax(150px,.8fr) minmax(0,2fr) auto;gap:24px;align-items:center;padding:22px 0;border-bottom:1px solid var(--hairline);text-decoration:none;transition:background .16s ease}
+.row:hover{background:rgba(255,255,255,.5)}
+.row:hover .name{color:var(--accent-deep)}
+.name{font-size:clamp(1.1rem,2vw,1.3rem);font-weight:700;letter-spacing:-.01em}
+.meta{margin-top:3px;color:var(--ink-3);font:12px/1.5 var(--font-mono)}
+.desc{color:var(--ink-2);font-size:15.5px}
+.desc small{display:block;color:var(--ink-3);font-size:13.5px;margin-top:2px}
+.go{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-size:14px;font-weight:600;white-space:nowrap}
+.footer{margin-top:clamp(60px,8vw,96px);padding:26px 0 40px;border-top:1px solid var(--hairline);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;color:var(--ink-3);font:12.5px var(--font-mono);letter-spacing:.05em}
+.footer a{color:var(--ink-2);text-decoration:none}
+.footer a:hover{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+@media (max-width:640px){.row{grid-template-columns:minmax(0,1fr) auto;gap:8px 16px;padding:18px 0}.desc{grid-column:1/-1}.go{align-self:start}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="nav">
+    <a class="nav-brand" href="https://huangjin.online"><span class="nav-seal" aria-hidden="true"></span>黄锦</a>
+    <a class="back" href="https://huangjin.online">← huangjin.online</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>项目站点<span>Project sites</span></h1>
+      <p>这里托管黄锦各开源项目的独立站点与安装脚本，路径为 <code>project.huangjin.online/&lt;项目名&gt;/</code>。<br>Landing pages and install scripts for Huang Jin's open-source projects, one directory per project.</p>
+    </section>
+
+    <ul class="list" aria-label="项目站点">
+      <li><a class="row" href="jsonita/"><div><div class="name">jsonita</div><div class="meta">macOS / Windows · 官网</div></div><p class="desc">菜单栏 JSON 工具箱：格式化、树状预览、转换与 AI 辅助修复。<small>Menu-bar JSON toolkit with formatting, tree view, conversion and AI-assisted fixes.</small></p><span class="go">打开 →</span></a></li>
+      <li><a class="row" href="page-snap/"><div><div class="name">page-snap</div><div class="meta">Chrome Extension · 官网</div></div><p class="desc">把网页保存为保真、可供 AI 阅读的 MHTML、单页 HTML 或 ZIP 归档。<small>Save pages as faithful, AI-readable MHTML, single HTML or ZIP archives.</small></p><span class="go">打开 →</span></a></li>
+      <li><a class="row" href="claude-code-qna/"><div><div class="name">claude-code-qna</div><div class="meta">Claude Code Plugin · 官网</div></div><p class="desc">把对话中尚未决定的内容转换成可点击问题。<small>Turns everything still undecided in a conversation into clickable questions.</small></p><span class="go">打开 →</span></a></li>
+      <li><a class="row" href="claude-code-queue/"><div><div class="name">claude-code-queue</div><div class="meta">Claude Code Plugin · 官网 + install.sh</div></div><p class="desc">/queue 将消息延后至当前轮次结束后按会话 FIFO 处理。<small>A prompt queue: /queue defers a message until the current turn ends.</small></p><span class="go">打开 →</span></a></li>
+      <li><a class="row" href="claude-code-clip/install.sh"><div><div class="name">claude-code-clip</div><div class="meta">Shell · macOS · install.sh</div></div><p class="desc">将文件写入 macOS 剪贴板，提供终端 clip 命令与 Claude Code 的 /clip。<small>Put files on the macOS clipboard; ships a clip command and /clip for Claude Code.</small></p><span class="go">脚本 →</span></a></li>
+    </ul>
+  </main>
+
+  <footer class="footer"><span>黄锦 Huang Jin</span><span><a href="https://github.com/jinhuang712/projects">github.com/jinhuang712/projects</a> · © 2026</span></footer>
+</div>
+</body>
+</html>

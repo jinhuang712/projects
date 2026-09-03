@@ -1,0 +1,7 @@
+[
+  { "name": "jsonita",           "repo": "jinhuang712/jsonita",           "ref": "main",   "path": "docs", "exclude": ["superpowers", "_config.yml"] },
+  { "name": "page-snap",         "repo": "jinhuang712/page-snap",         "ref": "master", "path": "docs", "exclude": [] },
+  { "name": "claude-code-qna",   "repo": "jinhuang712/claude-code-qna",   "ref": "main",   "path": "docs", "exclude": [] },
+  { "name": "claude-code-queue", "repo": "jinhuang712/claude-code-queue", "ref": "master", "path": "docs", "exclude": [] },
+  { "name": "claude-code-clip",  "repo": "jinhuang712/claude-code-clip",  "ref": "main",   "path": "docs", "exclude": [] }
+]
