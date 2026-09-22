@@ -15,7 +15,8 @@
 
 1. 在 `sites.json` 追加一条记录；
 2. 在 `site/index.html` 的列表里加一行；
-3. push 到 `main`，或在 Actions 里手动运行 `deploy`。
+3. push 到 `main`，或在 Actions 里手动运行 `deploy`；
+4. 在个人主页（`personal/personal-page`）的 `.project-links` 里加一个「网站」链接。
 
 ## 立即重建（源仓库更新后）
 
@@ -35,3 +36,5 @@ python3 -m http.server -d _site 8001
 | 类型 | 主机记录 | 记录值 |
 |---|---|---|
 | CNAME | `project` | `jinhuang712.github.io` |
+
+要用 API 改记录：先 `arkcli auth login volc-sso`，它会把短期 STS 凭据写进 `~/.arkcli/.env`；再调用云解析 OpenAPI（`open.volcengineapi.com`，service `DNS`，version `2018-08-01`，zone ZID `275799`）。
